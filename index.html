@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>Nikhil Raj — AI & ML Enthusiast | Data Science Portfolio</title>
+  <meta name="description" content="Portfolio of Nikhil Raj — AI & ML enthusiast, Data Science explorer, and B.Tech student at Nalanda College of Engineering / IIT Madras. Explore projects, skills, and more." />
+  <meta name="keywords" content="Nikhil Raj, AI ML, Data Science, Machine Learning, Python, Portfolio, IIT Madras, Nalanda College of Engineering" />
+  <meta name="author" content="Nikhil Raj" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nikhilraj.dev/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nikhil Raj — AI & ML Enthusiast | Portfolio" />
+  <meta property="og:description" content="Nikhil Raj's personal portfolio — AI/ML projects, data science explorations, and tech insights." />
+  <meta property="og:url" content="https://nikhilraj.dev/" />
+  <meta property="og:image" content="assets/myphoto.jpeg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nikhil Raj — AI & ML Enthusiast" />
+  <meta name="twitter:description" content="Portfolio: AI/ML projects, data science explorations, and tech insights." />
+
+  <!-- Schema.org Person markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nikhil Raj",
+    "url": "https://nikhilraj.dev",
+    "image": "assets/myphoto.jpeg",
+    "sameAs": [
+      "https://github.com/Nikhil3048",
+      "https://linkedin.com/in/nikhilraj"
+    ],
+    "jobTitle": "AI & ML Enthusiast",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Nalanda College of Engineering" },
+      { "@type": "CollegeOrUniversity", "name": "IIT Madras" }
+    ]
+  }
+  </script>
+
+  <!-- Favicon (emoji SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- EmailJS (for contact form — add your keys in js/contact.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+  <!-- Skip to main content (Accessibility) -->
+  <a href="#about" class="skip-link">Skip to main content</a>
+
+  <!-- Page Loader -->
+  <div id="page-loader" class="page-loader" role="status" aria-label="Loading">
+    <div class="loader-logo">NR.</div>
+    <div class="loader-bar-container">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor (desktop) -->
+  <div id="cursor" class="custom-cursor" aria-hidden="true"></div>
+  <div id="cursor-ring" class="custom-cursor-ring" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" style="position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#00d4ff,#a855f7);z-index:9999;width:0%;transition:width 0.1s;border-radius:0 3px 3px 0;" aria-hidden="true"></div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Nikhil Raj - Home">NR.</a>
+
+      <ul id="nav-links" class="nav-links" role="list">
+        <li><a href="#about" class="nav-link" aria-label="About section">About</a></li>
+        <li><a href="#skills" class="nav-link" aria-label="Skills section">Skills</a></li>
+        <li><a href="#projects" class="nav-link" aria-label="Projects section">Projects</a></li>
+        <li><a href="#education" class="nav-link" aria-label="Education section">Education</a></li>
+        <li><a href="#blog" class="nav-link" aria-label="Blog section">Blog</a></li>
+        <li><a href="#contact" class="nav-link nav-cta" aria-label="Contact section">
+          <i class="fas fa-paper-plane" aria-hidden="true"></i> Contact
+        </a></li>
+      </ul>
+
+      <button id="nav-hamburger" class="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" role="banner">
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="hero-glow-orb hero-glow-orb-1" aria-hidden="true"></div>
+    <div class="hero-glow-orb hero-glow-orb-2" aria-hidden="true"></div>
+
+    <div class="hero-container">
+      <!-- Left: Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-name">
+          Hi, I'm<br />
+          <span class="hero-name-highlight">Nikhil Raj</span>
+        </h1>
+
+        <p class="hero-tagline">
+          <strong>AI & ML Enthusiast</strong> | <strong>Data Science Explorer</strong><br />
+          Building intelligent solutions for tomorrow's challenges.
+        </p>
+
+        <div class="typewriter-container" aria-label="Dynamic role description">
+          <span class="typewriter-text"></span>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="hero-view-work-btn">
+            <i class="fas fa-code" aria-hidden="true"></i> View My Work
+          </a>
+          <a href="assets/myresume.pdf" class="btn btn-outline" download="Nikhil_Raj_Resume.pdf" id="hero-resume-btn">
+            <i class="fas fa-download" aria-hidden="true"></i> Download CV
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num" data-count="10" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Projects Built</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num" data-count="3" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Years Learning</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num" data-count="5" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Avatar Visual -->
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper" role="img" aria-label="Nikhil Raj profile photo">
+          <div class="hero-avatar-ring" aria-hidden="true">
+            <div class="hero-avatar-ring-inner"></div>
+          </div>
+          <div class="hero-avatar-glow" aria-hidden="true"></div>
+          <img
+            src="assets/myphoto.jpeg"
+            alt="Nikhil Raj — AI and ML enthusiast"
+            class="hero-avatar-img"
+            width="360"
+            height="360"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Floating info cards -->
+        <div class="hero-float-card hero-float-card-1" aria-hidden="true">
+          <span class="float-card-icon">🐍</span>
+          <div>
+            <div class="float-card-value">Python</div>
+            <div class="float-card-label">Primary Language</div>
+          </div>
+        </div>
+
+        <div class="hero-float-card hero-float-card-2" aria-hidden="true">
+          <span class="float-card-icon">🤖</span>
+          <div>
+            <div class="float-card-value">AI / ML</div>
+            <div class="float-card-label">Core Focus</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section section-alt" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Who I Am</span>
+        <h2 class="section-title" id="about-heading">About <span>Me</span></h2>
+        <p class="section-subtitle">Curious mind, code enthusiast, and lifelong learner.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Image column -->
+        <div class="about-image-col reveal-left">
+          <div class="about-image-frame">
+            <img
+              src="assets/myphoto.jpeg"
+              alt="Nikhil Raj"
+              width="400"
+              height="500"
+              loading="lazy"
+              style="width:100%;border-radius:20px;"
+            />
+            <span class="about-corner about-corner-tl"></span>
+            <span class="about-corner about-corner-br"></span>
+            <div class="about-badge-education">
+              <div style="font-size:1.2rem;margin-bottom:4px;">🎓</div>
+              <div style="font-family:var(--font-primary);font-weight:700;font-size:0.85rem;color:var(--clr-text);">B.Tech + BS</div>
+              <div style="font-size:0.75rem;color:var(--clr-neon-purple);">NCE & IIT Madras</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content column -->
+        <div class="about-content reveal-right">
+          <p class="about-intro">
+            Hey there! I'm <strong>Nikhil Raj</strong>, a passionate tech enthusiast currently pursuing
+            <strong>B.Tech in Computer Science</strong> at <strong>Nalanda College of Engineering</strong>
+            alongside a <strong>BS in Data Science & Applications</strong> from <strong>IIT Madras</strong>.
+          </p>
+          <p class="about-intro">
+            My journey into technology started with a simple curiosity about how machines can think.
+            That curiosity evolved into a deep passion for <strong>Artificial Intelligence</strong>,
+            <strong>Machine Learning</strong>, and <strong>Data Science</strong> — domains where I spend
+            most of my time exploring algorithms, building models, and uncovering insights from data.
+          </p>
+          <p class="about-intro">
+            Beyond code, I believe in <strong>effective communication</strong>, <strong>collaborative teamwork</strong>,
+            and <strong>continuous learning</strong>. I'm always eager to take on challenges that push
+            my boundaries and contribute to meaningful projects.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">🎓</div>
+              <div class="highlight-title">B.Tech — CSE</div>
+              <div class="highlight-detail">Nalanda College of Engineering</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">📊</div>
+              <div class="highlight-title">BS — Data Science</div>
+              <div class="highlight-detail">IIT Madras (Online Degree)</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🤖</div>
+              <div class="highlight-title">AI & ML Focus</div>
+              <div class="highlight-detail">Building intelligent systems</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🌱</div>
+              <div class="highlight-title">Always Learning</div>
+              <div class="highlight-detail">Staying ahead of the curve</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.5rem;">
+            <a href="#contact" class="btn btn-primary" id="about-contact-btn">
+              <i class="fas fa-envelope" aria-hidden="true"></i> Get In Touch
+            </a>
+            <a href="assets/myresume.pdf" class="btn btn-outline" download="Nikhil_Raj_Resume.pdf" id="about-resume-btn">
+              <i class="fas fa-file-pdf" aria-hidden="true"></i> View Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I Know</span>
+        <h2 class="section-title" id="skills-heading">My <span>Skills</span></h2>
+        <p class="section-subtitle">A blend of technical expertise and essential soft skills.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Technical Skills — Programming -->
+        <div class="skills-category reveal reveal-delay-1">
+          <h3 class="skills-category-title">
+            <span class="skills-category-title-icon" aria-hidden="true">💻</span>
+            Programming Languages
+          </h3>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                     alt="" class="skill-icon-img" aria-hidden="true" />
+                Python
+              </span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency 90%">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                     alt="" class="skill-icon-img" aria-hidden="true" />
+                C
+              </span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="C proficiency 75%">
+              <div class="skill-bar-fill" data-width="75"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                     alt="" class="skill-icon-img" aria-hidden="true" />
+                SQL
+              </span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="SQL proficiency 70%">
+              <div class="skill-bar-fill" data-width="70"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+                     alt="" class="skill-icon-img" aria-hidden="true" />
+                Bash / Shell
+              </span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Bash proficiency 60%">
+              <div class="skill-bar-fill" data-width="60"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI / ML / Data Science -->
+        <div class="skills-category reveal reveal-delay-2">
+          <h3 class="skills-category-title">
+            <span class="skills-category-title-icon" aria-hidden="true">🤖</span>
+            AI / ML & Data Science
+          </h3>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                     alt="" class="skill-icon-img" aria-hidden="true" />
+                Machine Learning
+              </span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Machine Learning 82%">
+              <div class="skill-bar-fill" data-width="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+                     alt="" class="skill-icon-img" aria-hidden="true" />
+                Data Analysis (NumPy/Pandas)
+              </span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Data Analysis 85%">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"
+                     alt="" class="skill-icon-img" aria-hidden="true" />
+                Data Visualization
+              </span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Data Visualization 78%">
+              <div class="skill-bar-fill" data-width="78"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                     alt="" class="skill-icon-img" aria-hidden="true" />
+                Deep Learning
+              </span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Deep Learning 65%">
+              <div class="skill-bar-fill" data-width="65"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-category reveal reveal-delay-3">
+          <h3 class="skills-category-title">
+            <span class="skills-category-title-icon" aria-hidden="true">🌟</span>
+            Soft Skills
+          </h3>
+
+          <div class="soft-skills-grid">
+            <span class="soft-skill-pill">🗣️ Communication</span>
+            <span class="soft-skill-pill">🤝 Teamwork</span>
+            <span class="soft-skill-pill">🏆 Leadership</span>
+            <span class="soft-skill-pill">🧠 Problem Solving</span>
+            <span class="soft-skill-pill">⏰ Time Management</span>
+            <span class="soft-skill-pill">🎯 Critical Thinking</span>
+            <span class="soft-skill-pill">🔄 Adaptability</span>
+            <span class="soft-skill-pill">💡 Creativity</span>
+            <span class="soft-skill-pill">📚 Self-Learning</span>
+            <span class="soft-skill-pill">🌍 Open-source Mindset</span>
+          </div>
+
+          <!-- Tools & DevOps mini section -->
+          <h4 style="font-size:0.85rem;color:var(--clr-text-muted);margin:1.5rem 0 1rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;">Tools & Platforms</h4>
+          <div class="soft-skills-grid">
+            <span class="soft-skill-pill" style="color:var(--clr-neon-blue);border-color:rgba(0,212,255,0.25);background:rgba(0,212,255,0.08);">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" style="width:14px;height:14px;" alt="" aria-hidden="true" /> Git
+            </span>
+            <span class="soft-skill-pill" style="color:var(--clr-neon-blue);border-color:rgba(0,212,255,0.25);background:rgba(0,212,255,0.08);">🐙 GitHub</span>
+            <span class="soft-skill-pill" style="color:var(--clr-neon-blue);border-color:rgba(0,212,255,0.25);background:rgba(0,212,255,0.08);">📓 Jupyter</span>
+            <span class="soft-skill-pill" style="color:var(--clr-neon-blue);border-color:rgba(0,212,255,0.25);background:rgba(0,212,255,0.08);">⚡ VS Code</span>
+            <span class="soft-skill-pill" style="color:var(--clr-neon-blue);border-color:rgba(0,212,255,0.25);background:rgba(0,212,255,0.08);">🐧 Linux</span>
+            <span class="soft-skill-pill" style="color:var(--clr-neon-blue);border-color:rgba(0,212,255,0.25);background:rgba(0,212,255,0.08);">☁️ Google Colab</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Icons Showcase -->
+      <div class="tech-icons-row reveal" role="list" aria-label="Technology icons">
+        <div class="tech-icon-item" role="listitem">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy" />
+          <span class="tech-icon-name">Python</span>
+        </div>
+        <div class="tech-icon-item" role="listitem">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" loading="lazy" />
+          <span class="tech-icon-name">C</span>
+        </div>
+        <div class="tech-icon-item" role="listitem">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" loading="lazy" />
+          <span class="tech-icon-name">TensorFlow</span>
+        </div>
+        <div class="tech-icon-item" role="listitem">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" loading="lazy" />
+          <span class="tech-icon-name">PyTorch</span>
+        </div>
+        <div class="tech-icon-item" role="listitem">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" loading="lazy" />
+          <span class="tech-icon-name">NumPy</span>
+        </div>
+        <div class="tech-icon-item" role="listitem">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" loading="lazy" />
+          <span class="tech-icon-name">Pandas</span>
+        </div>
+        <div class="tech-icon-item" role="listitem">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter" loading="lazy" />
+          <span class="tech-icon-name">Jupyter</span>
+        </div>
+        <div class="tech-icon-item" role="listitem">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" loading="lazy" />
+          <span class="tech-icon-name">MySQL</span>
+        </div>
+        <div class="tech-icon-item" role="listitem">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" loading="lazy" />
+          <span class="tech-icon-name">Git</span>
+        </div>
+        <div class="tech-icon-item" role="listitem">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" loading="lazy" />
+          <span class="tech-icon-name">Linux</span>
+        </div>
+        <div class="tech-icon-item" role="listitem">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" loading="lazy" />
+          <span class="tech-icon-name">VS Code</span>
+        </div>
+        <div class="tech-icon-item" role="listitem">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+               alt="GitHub" loading="lazy"
+               style="filter:invert(1) brightness(0.8);" />
+          <span class="tech-icon-name">GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I've Built</span>
+        <h2 class="section-title" id="projects-heading">Featured <span>Projects</span></h2>
+        <p class="section-subtitle">A showcase of real-world projects blending AI, ML, and creative problem-solving.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="projects-filter" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" id="filter-all">All</button>
+        <button class="filter-btn" data-filter="ml" role="tab" aria-selected="false" id="filter-ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="data" role="tab" aria-selected="false" id="filter-data">Data Science</button>
+        <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false" id="filter-ai">AI</button>
+        <button class="filter-btn" data-filter="web" role="tab" aria-selected="false" id="filter-web">Web</button>
+      </div>
+
+      <div class="projects-grid" role="list">
+
+        <!-- Project 1: Sentiment Analyzer -->
+        <article class="project-card reveal reveal-delay-1" data-category="ml ai" role="listitem">
+          <div class="project-thumb">
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0a1628,#1a0a38);display:flex;align-items:center;justify-content:center;font-size:4rem;">🧠</div>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-tags">
+              <span class="project-tag">NLP</span>
+              <span class="project-tag">Python</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Sentiment Analysis Engine</h3>
+            <p class="project-desc">
+              A deep learning NLP model that classifies customer reviews into positive, negative, and neutral sentiments with 91% accuracy using LSTM networks and pre-trained word embeddings.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Nikhil3048" target="_blank" rel="noopener noreferrer" class="project-link project-link-github" aria-label="View Sentiment Analysis on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+              </a>
+              <a href="#" class="project-link project-link-live" aria-label="View live demo">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Data Dashboard -->
+        <article class="project-card reveal reveal-delay-2" data-category="data" role="listitem">
+          <div class="project-thumb">
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#060a20,#0a1a30);display:flex;align-items:center;justify-content:center;font-size:4rem;">📊</div>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-tags">
+              <span class="project-tag">Pandas</span>
+              <span class="project-tag">Matplotlib</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">COVID-19 Data Explorer</h3>
+            <p class="project-desc">
+              An interactive data visualization dashboard analyzing global COVID-19 trends. Features time-series analysis, geographic heatmaps, and predictive modeling using scikit-learn.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Nikhil3048" target="_blank" rel="noopener noreferrer" class="project-link project-link-github" aria-label="View COVID Data Explorer on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+              </a>
+              <a href="#" class="project-link project-link-live" aria-label="View notebook">
+                <i class="fas fa-book" aria-hidden="true"></i> Notebook
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: ML Classifier -->
+        <article class="project-card reveal reveal-delay-3" data-category="ml" role="listitem">
+          <div class="project-thumb">
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#100a28,#200a20);display:flex;align-items:center;justify-content:center;font-size:4rem;">🌸</div>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-tags">
+              <span class="project-tag">scikit-learn</span>
+              <span class="project-tag">ML</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Plant Disease Classifier</h3>
+            <p class="project-desc">
+              Convolutional Neural Network that identifies plant diseases from leaf images with 88% accuracy. Trained on 50,000+ images using TensorFlow/Keras with data augmentation.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Nikhil3048" target="_blank" rel="noopener noreferrer" class="project-link project-link-github" aria-label="View Plant Disease Classifier on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: AI Chatbot -->
+        <article class="project-card reveal reveal-delay-1" data-category="ai" role="listitem">
+          <div class="project-thumb">
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#060c28,#0c1428);display:flex;align-items:center;justify-content:center;font-size:4rem;">🤖</div>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-tags">
+              <span class="project-tag">AI</span>
+              <span class="project-tag">Python</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Campus Info Chatbot</h3>
+            <p class="project-desc">
+              An intelligent chatbot designed for college queries — admissions, timetables, and FAQs — using rule-based NLP with a Python backend and a clean web interface.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Nikhil3048" target="_blank" rel="noopener noreferrer" class="project-link project-link-github" aria-label="View Campus Chatbot on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+              </a>
+              <a href="#" class="project-link project-link-live" aria-label="View live demo">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Portfolio Website -->
+        <article class="project-card reveal reveal-delay-2" data-category="web" role="listitem">
+          <div class="project-thumb">
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#060628,#180628);display:flex;align-items:center;justify-content:center;font-size:4rem;">🌐</div>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-tags">
+              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">JS</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">This Portfolio Website</h3>
+            <p class="project-desc">
+              You're looking at it! A fully custom, responsive portfolio built with pure HTML, CSS, and JavaScript. Features particle animations, scroll reveals, and a contact form.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Nikhil3048" target="_blank" rel="noopener noreferrer" class="project-link project-link-github" aria-label="View Portfolio on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i> Source
+              </a>
+              <a href="#" class="project-link project-link-live" aria-label="Currently viewing">
+                <i class="fas fa-eye" aria-hidden="true"></i> Live
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: Data Pipeline -->
+        <article class="project-card reveal reveal-delay-3" data-category="data ml" role="listitem">
+          <div class="project-thumb">
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#080a28,#0a1420);display:flex;align-items:center;justify-content:center;font-size:4rem;">🔮</div>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-tags">
+              <span class="project-tag">Regression</span>
+              <span class="project-tag">Python</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">House Price Predictor</h3>
+            <p class="project-desc">
+              Regression-based ML model predicting house prices from 15+ features. Implements feature engineering, hyperparameter tuning with GridSearchCV, and achieves R² of 0.89.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Nikhil3048" target="_blank" rel="noopener noreferrer" class="project-link project-link-github" aria-label="View House Price Predictor on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:3rem;" class="reveal">
+        <a href="https://github.com/Nikhil3048" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="see-more-projects-btn">
+          <i class="fab fa-github" aria-hidden="true"></i> See All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education" class="section" aria-labelledby="education-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title" id="education-heading">Education <span>Timeline</span></h2>
+        <p class="section-subtitle">Building a strong foundation in technology and science.</p>
+      </div>
+
+      <div class="timeline" role="list">
+
+        <!-- BS Data Science — IIT Madras -->
+        <div class="timeline-item reveal" role="listitem">
+          <div class="timeline-content">
+            <div class="timeline-period">2025 — Present</div>
+            <div class="timeline-degree">BS in Data Science &amp; Applications</div>
+            <div class="timeline-institution">🏛️ IIT Madras — Online Degree Programme</div>
+            <span class="timeline-score">Pursuing</span>
+          </div>
+          <div class="timeline-connector">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-spacer"></div>
+        </div>
+
+        <!-- B.Tech AI — Nalanda College of Engineering -->
+        <div class="timeline-item reveal" role="listitem">
+          <div class="timeline-spacer"></div>
+          <div class="timeline-connector">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-period">2025 — Present</div>
+            <div class="timeline-degree">B.Tech in Artificial Intelligence &amp; Machine Learning</div>
+            <div class="timeline-institution">🎓 Nalanda College of Engineering, Bihar</div>
+            <span class="timeline-score">Pursuing</span>
+          </div>
+        </div>
+
+        <!-- Class XII CBSE -->
+        <div class="timeline-item reveal" role="listitem">
+          <div class="timeline-content">
+            <div class="timeline-period">2022 — 2024</div>
+            <div class="timeline-degree">Class XII — Science (PCM)</div>
+            <div class="timeline-institution">📖 CBSE Board</div>
+            <span class="timeline-score">Completed</span>
+          </div>
+          <div class="timeline-connector">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-spacer"></div>
+        </div>
+
+        <!-- Class X CBSE -->
+        <div class="timeline-item reveal" role="listitem">
+          <div class="timeline-spacer"></div>
+          <div class="timeline-connector">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-period">2021 — 2022</div>
+            <div class="timeline-degree">Class X — Secondary Education</div>
+            <div class="timeline-institution">🏫 CBSE Board</div>
+            <span class="timeline-score">Completed</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESUME ===================== -->
+  <section id="resume" class="section section-alt" aria-labelledby="resume-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Career Snapshot</span>
+        <h2 class="section-title" id="resume-heading">My <span>Resume</span></h2>
+        <p class="section-subtitle">Everything at a glance — download or view online.</p>
+      </div>
+
+      <div class="resume-card reveal-scale">
+        <span class="resume-icon" aria-hidden="true">📄</span>
+        <h3 class="resume-title">Nikhil Raj — Full Resume</h3>
+        <p class="resume-desc">
+          A comprehensive document covering my education, technical skills, project experience,
+          certifications, and more. View it directly below or download a copy.
+        </p>
+
+        <div class="resume-features">
+          <div class="resume-feature">
+            <div class="resume-feature-check" aria-hidden="true">✓</div>
+            Education & Certifications
+          </div>
+          <div class="resume-feature">
+            <div class="resume-feature-check" aria-hidden="true">✓</div>
+            Projects & Experience
+          </div>
+          <div class="resume-feature">
+            <div class="resume-feature-check" aria-hidden="true">✓</div>
+            Skills & Tools
+          </div>
+        </div>
+
+        <div class="resume-actions">
+          <a href="assets/myresume.pdf" class="btn btn-primary" download="Nikhil_Raj_Resume.pdf" id="download-resume-btn">
+            <i class="fas fa-download" aria-hidden="true"></i> Download PDF
+          </a>
+          <button type="button" class="btn btn-outline" id="view-resume-btn"
+            onclick="
+              const wrapper = document.getElementById('resume-embed-wrapper');
+              const iframe  = document.getElementById('resume-iframe');
+              const isHidden = wrapper.style.display === 'none' || wrapper.style.display === '';
+              if (isHidden) {
+                wrapper.style.display = 'block';
+                if (!iframe.src) iframe.src = iframe.dataset.src;
+                this.innerHTML = '<i class=\'fas fa-eye-slash\'></i> Hide Resume';
+                wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              } else {
+                wrapper.style.display = 'none';
+                this.innerHTML = '<i class=\'fas fa-eye\'></i> View Resume';
+              }
+            "
+            aria-expanded="false"
+            aria-controls="resume-embed-wrapper"
+          >
+            <i class="fas fa-eye" aria-hidden="true"></i> View Resume
+          </button>
+        </div>
+      </div>
+
+      <!-- Embedded PDF Viewer (hidden by default) -->
+      <div id="resume-embed-wrapper" style="display:none;margin-top:2.5rem;border-radius:16px;overflow:hidden;border:1px solid rgba(0,212,255,0.2);box-shadow:0 0 40px rgba(0,212,255,0.08);transition:all 0.4s ease;">
+        <div style="background:rgba(0,212,255,0.06);padding:0.75rem 1.25rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(0,212,255,0.15);">
+          <div style="display:flex;align-items:center;gap:0.6rem;">
+            <i class="fas fa-file-pdf" style="color:#00d4ff;font-size:0.9rem;"></i>
+            <span style="font-family:var(--font-primary);font-size:0.85rem;color:var(--clr-text-muted);letter-spacing:0.04em;">Nikhil_Raj_Resume.pdf</span>
+          </div>
+          <a href="assets/myresume.pdf" target="_blank" rel="noopener" style="font-size:0.78rem;color:#00d4ff;text-decoration:none;display:flex;align-items:center;gap:0.35rem;">
+            <i class="fas fa-external-link-alt"></i> Open full screen
+          </a>
+        </div>
+        <iframe
+          data-src="assets/myresume.pdf"
+          id="resume-iframe"
+          title="Nikhil Raj Resume"
+          width="100%"
+          height="780"
+          style="display:block;border:none;background:#0a0a1a;"
+          aria-label="Embedded resume PDF viewer"
+        >
+          <p style="padding:2rem;color:#ccc;">Your browser doesn't support inline PDFs.
+            <a href="assets/myresume.pdf" style="color:#00d4ff;">Click here to download the resume.</a>
+          </p>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BLOG ===================== -->
+  <section id="blog" class="section" aria-labelledby="blog-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Thoughts & Insights</span>
+        <h2 class="section-title" id="blog-heading">From the <span>Blog</span></h2>
+        <p class="section-subtitle">Sharing knowledge, tutorials, and perspectives from my tech journey.</p>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card reveal reveal-delay-1">
+          <div class="blog-thumb" aria-hidden="true">🧠</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-cat">Machine Learning</span>
+              <span aria-label="Published date">Mar 2026</span>
+              <span>·</span>
+              <span>5 min read</span>
+            </div>
+            <h3 class="blog-title">Understanding Neural Networks from Scratch</h3>
+            <p class="blog-excerpt">
+              A beginner-friendly breakdown of how neural networks work — from perceptrons to backpropagation, with Python examples.
+            </p>
+          </div>
+        </article>
+
+        <article class="blog-card reveal reveal-delay-2">
+          <div class="blog-thumb" aria-hidden="true">📊</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-cat">Data Science</span>
+              <span aria-label="Published date">Feb 2026</span>
+              <span>·</span>
+              <span>8 min read</span>
+            </div>
+            <h3 class="blog-title">Pandas Tips & Tricks for Data Wrangling</h3>
+            <p class="blog-excerpt">
+              Essential Pandas techniques every data scientist should know — from pivot tables to advanced groupby operations.
+            </p>
+          </div>
+        </article>
+
+        <article class="blog-card reveal reveal-delay-3">
+          <div class="blog-thumb" aria-hidden="true">🚀</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-cat">Career</span>
+              <span aria-label="Published date">Jan 2026</span>
+              <span>·</span>
+              <span>4 min read</span>
+            </div>
+            <h3 class="blog-title">Starting Your AI/ML Journey in 2026</h3>
+            <p class="blog-excerpt">
+              A practical roadmap for beginners entering the AI/ML field — resources, projects, and advice from a fellow student.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:3rem;" class="reveal">
+        <a href="#" class="btn btn-purple" id="view-all-posts-btn">
+          <i class="fas fa-pen-nib" aria-hidden="true"></i> View All Posts
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Let's Connect</span>
+        <h2 class="section-title" id="contact-heading">Get In <span>Touch</span></h2>
+        <p class="section-subtitle">Open to collaborations, opportunities, and conversations about AI & tech.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Info -->
+        <div class="contact-info reveal-left">
+          <h3 class="contact-info-title">
+            Let's build something<br /><span>amazing together</span>
+          </h3>
+          <p class="contact-info-desc">
+            Whether you have a project idea, want to discuss AI/ML, explore collaborations,
+            or just say hi — I'd love to hear from you! I typically respond within 24 hours.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">📧</div>
+              <div>
+                <div class="contact-detail-label">Email</div>
+                <div class="contact-detail-value">
+                  <a href="mailto:rajnikhil8092@gmail.com" style="color:inherit;">rajnikhil8092@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">📍</div>
+              <div>
+                <div class="contact-detail-label">Location</div>
+                <div class="contact-detail-value">Bihar, India 🇮🇳</div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">🕐</div>
+              <div>
+                <div class="contact-detail-label">Response Time</div>
+                <div class="contact-detail-value">Within 24 hours</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div>
+            <p style="font-size:0.82rem;color:var(--clr-text-muted);text-transform:uppercase;letter-spacing:0.08em;font-weight:600;margin-bottom:1rem;">Find me on</p>
+            <div class="social-links" role="list">
+              <a href="https://linkedin.com/in/nikhilraj" target="_blank" rel="noopener noreferrer"
+                 class="social-link" aria-label="LinkedIn Profile" role="listitem" id="linkedin-link">
+                <i class="fab fa-linkedin-in" aria-hidden="true" style="color:#0A66C2;"></i>
+              </a>
+              <a href="https://github.com/Nikhil3048" target="_blank" rel="noopener noreferrer"
+                 class="social-link" aria-label="GitHub Profile" role="listitem" id="github-link">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="mailto:rajnikhil8092@gmail.com"
+                 class="social-link" aria-label="Send Email" role="listitem" id="email-link">
+                <i class="fas fa-envelope" aria-hidden="true" style="color:#EA4335;"></i>
+              </a>
+              <a href="https://twitter.com/nikhilraj" target="_blank" rel="noopener noreferrer"
+                 class="social-link" aria-label="Twitter / X Profile" role="listitem" id="twitter-link">
+                <i class="fab fa-x-twitter" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrapper reveal-right">
+          <form id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Your Name <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="from_name"
+                  class="form-input"
+                  placeholder="Nikhil Raj"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="from_email"
+                  class="form-input"
+                  placeholder="you@example.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input
+                type="text"
+                id="contact-subject"
+                name="subject"
+                class="form-input"
+                placeholder="Let's collaborate on an AI project!"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+              <textarea
+                id="contact-message"
+                name="message"
+                class="form-textarea"
+                placeholder="Tell me about your project, idea, or just say hello! 👋"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit" id="contact-submit-btn">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+            </button>
+
+            <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Nikhil Raj</div>
+          <p class="footer-tagline">
+            AI & ML Enthusiast | Data Science Explorer<br />
+            Building the future, one model at a time. 🚀
+          </p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav" role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 <span>Nikhil Raj</span>. Crafted with ❤️ and lots of ☕
+        </p>
+        <div class="footer-social" role="list">
+          <a href="https://github.com/Nikhil3048" target="_blank" rel="noopener noreferrer"
+             aria-label="GitHub" role="listitem">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://linkedin.com/in/nikhilraj" target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" role="listitem">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:rajnikhil8092@gmail.com" aria-label="Email" role="listitem">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button
+    id="back-to-top"
+    aria-label="Back to top"
+    style="position:fixed;bottom:2rem;right:2rem;z-index:800;width:46px;height:46px;background:linear-gradient(135deg,#00d4ff,#a855f7);border-radius:50%;color:white;font-size:1.1rem;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,212,255,0.4);opacity:0;pointer-events:none;transform:translateY(10px);transition:all 0.3s ease;cursor:pointer;border:none;"
+  >
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/particles.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/contact.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
