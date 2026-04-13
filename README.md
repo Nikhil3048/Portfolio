@@ -1,4 +1,4 @@
-# Nikhil Raj — Portfolio Website
+# Er. Nikhil Raj — Portfolio Website
 
 A modern, dark-mode portfolio website built with **pure HTML, CSS, and JavaScript** (zero frameworks).
 
@@ -102,4 +102,4 @@ Replace `assets/resume.pdf` with your actual resume PDF. The download button and
 
 ---
 
-Made with ❤️ by **Nikhil Raj** · [GitHub](https://github.com/nikhilraj) · [LinkedIn](https://linkedin.com/in/nikhilraj)
+Made with ❤️ by **Er. Nikhil Raj** · [GitHub](https://github.com/nikhilraj) · [LinkedIn](https://linkedin.com/in/nikhilraj)
