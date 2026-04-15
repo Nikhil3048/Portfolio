@@ -11,7 +11,7 @@ function initLoader() {
 
   window.addEventListener('load', () => {
     setTimeout(() => {
-      loadclassList.add('hidden');
+      loader.classList.add('hidden');
       document.body.style.overflow = '';
     }, 1600);
   });
@@ -48,15 +48,15 @@ function initNavigation() {
 
   // Hamburger menu
   if (hamburger && navLinks) {
-    hamburgaddEventListener('click', () => {
-      hamburgclassList.toggle('open');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
       navLinks.classList.toggle('open');
     });
 
     // Close menu on nav link click
     navLinkItems.forEach(link => {
       link.addEventListener('click', () => {
-        hamburgclassList.remove('open');
+        hamburger.classList.remove('open');
         navLinks.classList.remove('open');
       });
     });
@@ -64,7 +64,7 @@ function initNavigation() {
     // Close on outside click
     document.addEventListener('click', (e) => {
       if (!navbar.contains(e.target)) {
-        hamburgclassList.remove('open');
+        hamburger.classList.remove('open');
         navLinks.classList.remove('open');
       }
     });
@@ -254,7 +254,7 @@ function showToast(message, type = 'success') {
   const toast = document.createElement('div');
   toast.className = `toast ${type}`;
   toast.innerHTML = `${type === 'success' ? '✅' : '❌'} ${message}`;
-  containappendChild(toast);
+  container.appendChild(toast);
 
   setTimeout(() => {
     toast.style.transition = 'all 0.4s ease';
