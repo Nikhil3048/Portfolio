@@ -1,10 +1,10 @@
 /**
  * contact.js — Contact form handler
- * Sends messages directly to rajnikhil8092@gmail.com via mailto:
+ * Sends messages directly to rajNikhil8092@gmail.com via mailto:
  * No backend or API keys required — works out of the box.
  */
 
-const CONTACT_EMAIL = 'rajnikhil8092@gmail.com';
+const CONTACT_EMAIL = 'rajNikhil8092@gmail.com';
 
 function initContactForm() {
   const form = document.getElementById('contact-form');
@@ -17,10 +17,10 @@ function initContactForm() {
     const status = document.getElementById('form-status');
 
     // Collect form data
-    const fromName    = form.querySelector('#contact-name')?.value.trim()    || '';
-    const fromEmail   = form.querySelector('#contact-email')?.value.trim()   || '';
-    const subject     = form.querySelector('#contact-subject')?.value.trim() || 'Portfolio Contact';
-    const message     = form.querySelector('#contact-message')?.value.trim() || '';
+    const fromName = form.querySelector('#contact-name')?.value.trim() || '';
+    const fromEmail = form.querySelector('#contact-email')?.value.trim() || '';
+    const subject = form.querySelector('#contact-subject')?.value.trim() || 'Portfolio Contact';
+    const message = form.querySelector('#contact-message')?.value.trim() || '';
 
     // Validation
     if (!fromName || !fromEmail || !message) {

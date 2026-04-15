@@ -102,4 +102,4 @@ Replace `assets/resume.pdf` with your actual resume PDF. The download button and
 
 ---
 
-Made with ❤️ by **Er. Nikhil Raj** · [GitHub](https://github.com/nikhilraj) · [LinkedIn](https://linkedin.com/in/nikhilraj)
+Made with ❤️ by **Er. Nikhil Raj** · [GitHub](https://github.com/Nikhilraj) · [LinkedIn](https://linkedin.com/in/Nikhilraj)
