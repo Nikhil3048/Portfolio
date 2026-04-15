@@ -80,7 +80,7 @@ function showToast(message, type = 'success') {
   const toast = document.createElement('div');
   toast.className = `toast ${type}`;
   toast.innerHTML = `${type === 'success' ? '✅' : '❌'} ${message}`;
-  container.appendChild(toast);
+  containappendChild(toast);
 
   setTimeout(() => {
     toast.style.animation = 'none';

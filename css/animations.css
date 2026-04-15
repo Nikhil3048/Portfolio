@@ -8,6 +8,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -19,6 +20,7 @@
     opacity: 0;
     transform: translateY(-30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -30,6 +32,7 @@
     opacity: 0;
     transform: translateX(-40px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -41,6 +44,7 @@
     opacity: 0;
     transform: translateX(40px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -52,6 +56,7 @@
     opacity: 0;
     transform: scale(0.8);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -63,6 +68,7 @@
     opacity: 0;
     transform: translateY(60px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -109,7 +115,7 @@
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .reveal.revealed {
@@ -121,7 +127,7 @@
   opacity: 0;
   transform: translateX(-50px);
   transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .reveal-left.revealed {
@@ -133,7 +139,7 @@
   opacity: 0;
   transform: translateX(50px);
   transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .reveal-right.revealed {
@@ -145,7 +151,7 @@
   opacity: 0;
   transform: scale(0.85);
   transition: opacity 0.6s ease,
-              transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .reveal-scale.revealed {
@@ -154,20 +160,44 @@
 }
 
 /* Staggered reveals using CSS delays */
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-.reveal-delay-4 { transition-delay: 0.4s; }
-.reveal-delay-5 { transition-delay: 0.5s; }
-.reveal-delay-6 { transition-delay: 0.6s; }
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+
+.reveal-delay-5 {
+  transition-delay: 0.5s;
+}
+
+.reveal-delay-6 {
+  transition-delay: 0.6s;
+}
 
 /* =============================================
    BACKGROUND EFFECTS
    ============================================= */
 /* Animated gradient border */
 @keyframes borderGlow {
-  0%, 100% { box-shadow: 0 0 10px rgba(0, 212, 255, 0.3); }
-  50% { box-shadow: 0 0 30px rgba(0, 212, 255, 0.7), 0 0 60px rgba(168, 85, 247, 0.3); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.7), 0 0 60px rgba(168, 85, 247, 0.3);
+  }
 }
 
 .glow-border {
@@ -176,8 +206,15 @@
 
 /* Floating animation */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 .float-anim {
@@ -186,23 +223,47 @@
 
 /* Rotate animation (for decorators) */
 @keyframes slowRotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Gradient shift animation */
 @keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Neon flicker */
 @keyframes neonFlicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
     text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
   }
-  20%, 24%, 55% {
+
+  20%,
+  24%,
+  55% {
     text-shadow: none;
   }
 }
@@ -223,7 +284,7 @@
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.page-loader.hidden {
+.page-loadhidden {
   opacity: 0;
   visibility: hidden;
 }
@@ -256,8 +317,13 @@
 }
 
 @keyframes loaderProgress {
-  from { width: 0%; }
-  to { width: 100%; }
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 /* =============================================
@@ -328,6 +394,7 @@
    REDUCED MOTION SUPPORT
    ============================================= */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -387,6 +454,7 @@
     opacity: 0;
     transform: translateX(100%);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);

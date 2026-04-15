@@ -30,7 +30,7 @@ class ScrollAnimator {
         if (entry.isIntersecting) {
           entry.target.classList.add('revealed');
           // Unobserve after first reveal for performance
-          revealObserver.unobserve(entry.target);
+          revealObservunobserve(entry.target);
         }
       });
     }, this.observerOptions);
@@ -38,7 +38,7 @@ class ScrollAnimator {
     const revealElements = document.querySelectorAll(
       '.reveal, .reveal-left, .reveal-right, .reveal-scale'
     );
-    revealElements.forEach(el => revealObserver.observe(el));
+    revealElements.forEach(el => revealObservobserve(el));
   }
 
   // ——— Skill Bars Observer ———
@@ -53,13 +53,13 @@ class ScrollAnimator {
               fill.style.width = targetWidth + '%';
             }, idx * 120);
           });
-          skillBarsObserver.unobserve(entry.target);
+          skillBarsObservunobserve(entry.target);
         }
       });
     }, this.skillsObserverOptions);
 
     const skillCategories = document.querySelectorAll('.skills-category');
-    skillCategories.forEach(cat => skillBarsObserver.observe(cat));
+    skillCategories.forEach(cat => skillBarsObservobserve(cat));
   }
 
   // ——— Counter Observer (hero stats) ———
@@ -69,13 +69,13 @@ class ScrollAnimator {
         if (entry.isIntersecting) {
           const counters = entry.target.querySelectorAll('[data-count]');
           counters.forEach(counter => this.animateCounter(counter));
-          counterObserver.unobserve(entry.target);
+          counterObservunobserve(entry.target);
         }
       });
     }, { threshold: 0.5 });
 
     const statsEl = document.querySelector('.hero-stats');
-    if (statsEl) counterObserver.observe(statsEl);
+    if (statsEl) counterObservobserve(statsEl);
   }
 
   animateCounter(el) {
@@ -108,7 +108,7 @@ class ScrollAnimator {
           setTimeout(() => {
             entry.target.classList.add('revealed');
           }, idx * 150);
-          timelineObserver.unobserve(entry.target);
+          timelineObservunobserve(entry.target);
         }
       });
     }, { threshold: 0.2 });
@@ -116,7 +116,7 @@ class ScrollAnimator {
     const timelineItems = document.querySelectorAll('.timeline-item');
     timelineItems.forEach(item => {
       item.classList.add('reveal');
-      timelineObserver.observe(item);
+      timelineObservobserve(item);
     });
   }
 }

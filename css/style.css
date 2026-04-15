@@ -66,7 +66,9 @@
 }
 
 /* Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -98,7 +100,8 @@ a {
   text-decoration: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -365,7 +368,7 @@ button {
 .nav-cta:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 20px rgba(0, 212, 255, 0.5);
-  background: rgba(255,255,255,0.1) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
 }
 
 .nav-hamburger {
@@ -385,15 +388,15 @@ button {
   transition: all var(--transition-med);
 }
 
-.nav-hamburger.open span:nth-child(1) {
+.nav-hamburgopen span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
 
-.nav-hamburger.open span:nth-child(2) {
+.nav-hamburgopen span:nth-child(2) {
   opacity: 0;
 }
 
-.nav-hamburger.open span:nth-child(3) {
+.nav-hamburgopen span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
@@ -451,8 +454,15 @@ button {
 }
 
 @keyframes orbFloat {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(30px, -30px) scale(1.05); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(30px, -30px) scale(1.05);
+  }
 }
 
 .hero-container {
@@ -497,8 +507,17 @@ button {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.4); }
-  50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(0, 212, 255, 0); }
+
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.4);
+  }
+
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 6px rgba(0, 212, 255, 0);
+  }
 }
 
 .hero-name {
@@ -520,8 +539,13 @@ button {
 }
 
 @keyframes shimmer {
-  0% { background-position: 0% center; }
-  100% { background-position: 200% center; }
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
 }
 
 .hero-tagline {
@@ -549,8 +573,15 @@ button {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero-cta {
@@ -609,8 +640,13 @@ button {
 }
 
 @keyframes ringRotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .hero-avatar-ring-inner {
@@ -639,8 +675,17 @@ button {
 }
 
 @keyframes glowPulse {
-  0%, 100% { opacity: 0.8; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.05); }
+
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
 }
 
 .hero-float-card {
@@ -672,8 +717,15 @@ button {
 }
 
 @keyframes cardFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .float-card-icon {
@@ -728,8 +780,15 @@ button {
 }
 
 @keyframes scrollWheel {
-  0% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(12px); }
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
 }
 
 /* =============================================
@@ -1121,7 +1180,7 @@ button {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0,212,255,0.05) 0%, transparent 100%);
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, transparent 100%);
   opacity: 0;
   transition: opacity var(--transition-med);
   z-index: 1;
