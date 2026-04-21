@@ -872,14 +872,14 @@
           <button type="button" class="btn btn-outline" id="view-resume-btn" onclick="
               const wrapper = document.getElementById('resume-embed-wrapper');
               const iframe  = document.getElementById('resume-iframe');
-              const isHidden = wrappstyle.display === 'none' || wrappstyle.display === '';
+              const isHidden = wrapper.style.display === 'none' || wrapper.style.display === '';
               if (isHidden) {
-                wrappstyle.display = 'block';
+                wrapper.style.display = 'block';
                 if (!iframe.src) iframe.src = iframe.dataset.src;
                 this.innerHTML = '<i class=\'fas fa-eye-slash\'></i> Hide Resume';
-                wrappscrollIntoView({ behavior: 'smooth', block: 'start' });
+                wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
               } else {
-                wrappstyle.display = 'none';
+                wrapper.style.display = 'none';
                 this.innerHTML = '<i class=\'fas fa-eye\'></i> View Resume';
               }
             " aria-expanded="false" aria-controls="resume-embed-wrapper">

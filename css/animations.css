@@ -284,7 +284,7 @@
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.page-loadhidden {
+.page-loader.hidden {
   opacity: 0;
   visibility: hidden;
 }
